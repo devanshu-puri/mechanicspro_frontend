@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
+=======
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -4,7 +4,11 @@ import Header from '../components/Header';
 
 const PaymentQR = () => {
   const location = useLocation();
+<<<<<<< HEAD
  // const navigate = useNavigate();
+=======
+  const navigate = useNavigate();
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
   const { amount, name, service } = location.state || {};
 
   const [transactionId, setTransactionId] = useState("");

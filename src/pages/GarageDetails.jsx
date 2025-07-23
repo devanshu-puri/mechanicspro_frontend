@@ -6,7 +6,11 @@ import AdvancedBookingForm from "../components/AdvancedBookingForm";
 import { API_URL } from '../Api/Apiurl';
 
 const GarageDetailPage = () => {
+<<<<<<< HEAD
   //const navigate = useNavigate();
+=======
+  const navigate = useNavigate();
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
 
   // State for garage data
   const [garageData, setGarageData] = useState(null);

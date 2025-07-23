@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+<<<<<<< HEAD
 import Feedback from "../components/Feedback";
 import ChooseUs from "../components/ChooseUs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from '../components/Navbar';
 //import AdvancedBookingForm from "../components/AdvancedBookingForm";
+=======
+import Header from "../components/Header";
+import Feedback from "../components/Feedback";
+import ChooseUs from "../components/ChooseUs";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AdvancedBookingForm from "../components/AdvancedBookingForm";
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
 import Footer from "../components/Footer";
 import { API_URL } from "../Api/Apiurl";
 
@@ -48,6 +56,7 @@ const Home = () => {
 
   return (
     <>
+<<<<<<< HEAD
       
       <div 
   className="page-content hero-section d-flex align-items-center justify-content-center text-white"
@@ -62,6 +71,19 @@ const Home = () => {
   }}
 >
 
+=======
+      <Header />
+      
+      <div
+  className="hero-section d-flex align-items-center justify-content-center text-white"
+  style={{
+    backgroundImage: `url(${require('../assets/garage1.jpg')})`, // adjust path if needed
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    minHeight: "100vh",
+  }}
+>
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
   <div className="text-center px-3">
     <span className="badge bg-warning text-dark fw-semibold mb-3">
       #1 Best Services In India

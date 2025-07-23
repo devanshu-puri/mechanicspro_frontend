@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -75,6 +76,12 @@ u
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+=======
+.App {
+  text-align: center;
+}
+
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
 .App-logo {
   height: 40vmin;
   pointer-events: none;

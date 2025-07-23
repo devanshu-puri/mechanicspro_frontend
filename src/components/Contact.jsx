@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { API_URL } from '../Api/Apiurl';
 import "../Styles/Contact.css";
 import mapImage from '../assets/map.jpg';
 
+=======
+import {API_URL} from '../Api/Apiurl';
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +29,13 @@ const Contact = () => {
     try {
       const res = await fetch(`${API_URL}/api/contacts`, {
         method: 'POST',
+<<<<<<< HEAD
         headers: { 'Content-Type': 'application/json' },
+=======
+        headers: {
+          'Content-Type': 'application/json'
+        },
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
         body: JSON.stringify(formData)
       });
       if (res.ok) {
@@ -41,6 +51,7 @@ const Contact = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="contact-wrapper">
       <div className="contact-heading">
         <h2>Contact Us</h2>
@@ -139,6 +150,74 @@ const Contact = () => {
         <img src={mapImage} alt="Map" />
       </div>
 
+=======
+    <div className="container py-5">
+      <h5 className="text-center text-muted mb-1">We’re available 24/7 for you</h5>
+      <h3 className="text-center fw-bold mb-4">
+        For any query/problems fill this form
+      </h3>
+
+      <form className="row g-3" onSubmit={handleSubmit}>
+        {/* Name */}
+        <div className="col-12">
+          <label className="form-label fw-semibold">Name <span className="text-danger">*</span></label>
+          <input
+            type="text"
+            name="name"
+            className="form-control"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        {/* Email */}
+        <div className="col-12">
+          <label className="form-label fw-semibold">Email <span className="text-danger">*</span></label>
+          <input
+            type="email"
+            name="email"
+            className="form-control"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        {/* Mobile Number */}
+        <div className="col-12">
+          <label className="form-label fw-semibold">Mobile Number <span className="text-danger">*</span></label>
+          <input
+            type="text"
+            name="mobileNumber"
+            className="form-control"
+            placeholder="Mobile Number"
+            value={formData.mobileNumber}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        {/* Message */}
+        <div className="col-12">
+          <label className="form-label fw-semibold">Your Message <span className="text-danger">*</span></label>
+          <textarea
+            name="message"
+            className="form-control"
+            rows="4"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+        </div>
+        {/* Submit Button */}
+        <div className="col-12">
+          <button type="submit" className="btn btn-primary px-4">
+            Submit Form
+          </button>
+        </div>
+      </form>
+>>>>>>> f390404e8bfa606436d2b317729391df70e3f716
     </div>
   );
 };
